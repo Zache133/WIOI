@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Background Example</title>
+    
+    <style>
+        body {
+            /* The image source - use a local path or a URL */
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueHBybm5ueXp4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHgmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/3o7TKMGpxP5pS6l9i8/giphy.gif');
+            
+            /* Center and scale the image */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+
+            /* Darken the GIF slightly so text is easier to read */
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.4);
+
+            /* Basic text styling */
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>GIF Background</h1>
+
+</body>
+</html>
