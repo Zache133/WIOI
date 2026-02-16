@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIOI</title>
+    <style>
+        body {
+            background-color: #443f3f;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .textstyle {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            
+        }
+        a {
+            color: #ffffff;
+            padding: 2px;
+            font-size: 150%;
+        }
+    </style>
+</head>
+<body>
+    <h2>WESTRÖM INDEX OF INTERESTS</h2>
+    <p>MD</p>
+    <ul id="file-list">
+        <li>Loading schematics...</li>
+    </ul>
+    <script>
+    // Replace with your GitHub username and folder name
+    const url = "https://api.github.com/repos/Zache133/WIOI/pdf";
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+        const list = document.getElementById('file-list');
+        list.innerHTML = ''; // Clear the "Loading" text
+        
+        data.forEach(file => {
+            if(file.name.endsWith('.pdf')) {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="${file.download_url}">${file.name}</a>`;
+            list.appendChild(li);
+            }
+        });
+        });
+    </script>
+</body>
+<footer>
+    <p>Website fueled by coffee and some sort of autism</p>
+</footer>
+</html>
