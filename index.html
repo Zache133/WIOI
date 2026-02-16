@@ -22,16 +22,43 @@
         .textstyle {
             color: rgb(255, 255, 255);
             text-decoration: none;
-            
         }
         a {
             color: #ffffff;
             padding: 2px;
             font-size: 150%;
         }
+
+        /* --- STYLING THE SMALL IN-LINE IMAGE --- */
+        .li-image {
+            height: 1em; /* This makes it match the height of your text exactly */
+            vertical-align: middle;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        /* --- POPUP OVERLAY STYLES --- */
+        #image-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        #image-overlay img {
+            max-width: 80%;
+            max-height: 80%;
+            border: 3px solid white;
+        }
     </style>
 </head>
 <body>
+
     <h2>WESTRÖM INDEX OF INTERESTS</h2>
     <p>index of my interests</p>
     <ul>
@@ -42,12 +69,32 @@
         <li class="textstyle"><a href="./assignment/html/index.html">Old assignment</a></li>
         <li class="textstyle"><a href="./s/index.html">Old assignment 2</a></li>
         <li class="textstyle"><a href="./hellothere.html">Hello There</a></li>
+        
+        <li class="textstyle">
+            <a href="javascript:void(0)" onclick="showImage()">
+                <img src="./pig.png" class="li-image" alt="icon">
+            </a>
+        </li>
     </ul>
+
+    <div id="image-overlay" onclick="this.style.display='none'">
+        <img src="./yeah.jpg" alt="Popup Content">
+    </div>
+
+    <footer>
+        <p>he has become the long boi, but how are he do it?</p>
+    </footer>
+
+    <script>
+        function showImage() {
+            const overlay = document.getElementById('image-overlay');
+            overlay.style.display = 'flex';
+
+            setTimeout(function() {
+                overlay.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+
 </body>
-<footer>
-    <p>bababoey</p>
-</footer>
 </html>
-
-
-
