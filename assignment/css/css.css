@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    width: 100%;
+    overflow-x:hidden;
+    background-color: rgb(210, 207, 207);
+}
+nav{
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(33, 42, 62);
+    color: white;
+    font-family: 'Stalinist One', cursive;
+    font-size: 0.7em;
+}
+
+.Logo{
+    float: right;
+    width: 100vw;
+    
+    
+    
+}
+.class{
+    list-style-type: none;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.class li{
+    padding: 5px;
+    display: inline-block;
+    border-right:solid 2px rgb(155, 164, 181) ;
+    vertical-align: center;
+    letter-spacing: 0.1em;
+}
+.class li a{
+    text-decoration: none;
+    color: white;
+}
+main{
+ display: inline-block;
+ width: 100vw;
+ height: 50px;   
+}
+main div{
+    margin-left: 10vw;
+    float: left;
+    width: 20vw;
+    height: 20vw;
+    
+    background-color: #394867;
+}
+
+.SO{
+margin: auto;
+padding: 40px;
+
+}
+.Image img{ 
+width:100vw;
+height: auto;
+box-shadow: 0px 10px 10px rgb(34, 31, 31);
+}
+main h2{
+text-align: center;
+}
+main h3{
+    color: white;
+    text-align: center;
+   
+    
+}
+main div img{
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width:100%;
+    max-height: 100%;
+    
+} 
+.drop{
+    height: 20px;
+    background-color: none;
+}
+.dropdown{
+    display:none;
+}
+li a:hover{
+    background-color:rgb(94, 94, 97);
+}
+  li:first-child:hover .dropdown{
+    display:block;
+    width:15vw;
+    height: 30vh;
+    position:absolute;
+    left: 5px;
+    top: 50px;
+    background-color:#545963;
+    padding: 5px;
+    
+  }
+  .dropdown{
+    box-shadow: 0px 10px 10px grey;
+  }
+  .dropdown a:hover {background-color:grey;}
+  .dropdown a{
+    font-size: large;
+  }
+  footer div{
+    width: 8vw;
+    height: 30px;
+    background-color: #545963;
+    padding-left: 0.2vw;
+    margin-top: 48vh;
+    position: fixed;
+  }
