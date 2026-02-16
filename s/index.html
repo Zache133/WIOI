@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Airforce Index</title>
+</head>
+<body>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+    <video autoplay muted loop id="background-video1">
+        <source src="./media/first.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="background-video">
+        <source src="./media/seMov.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="background-video2">
+        <source src="./media/russ.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="background-video3">
+        <source src="./media/ussa.mp4" type="video/mp4">
+    </video>
+    <div class="flex-c">
+        <div class="fill" id="ussrFlag"><img  src="./img/ussrFlag960.png" alt="USSR"></div>
+        <div class="fill" id="usaFlag"><img  src="./img/USA.png" alt="USA"></div>
+        <div class="fill" id="sweFlag"><img  src="./img/SWE.png" alt="SWE"></div>
+    </div>
+    <div class="flex-cm">
+        <div class="fill" id="ussrDrop">
+            <ul>
+                <li><a id="ud1" href="./su57.html">Su57</a></li>
+                <li><a id="ud2" href="./mig21.html">MiG21</a></li>
+                <li><a id="ud3" href="">Yak9</a></li>
+            </ul>
+        </div>
+        <div class="fill" id="usaDrop">
+            <ul>
+                <li><a id="ud4" href="./f22.html">F22</a></li>
+                <li><a id="ud5" href="./F4.html">F4</a></li>
+                <li><a id="ud6" href="./p51.html">P51</a></li>
+            </ul>
+        </div>
+        <div class="fill" id="sweDrop">
+            <ul>
+                <li><a id="ud7" href="./jas39.html">JAS39</a></li>
+                <li><a id="ud8" href="./j35.html">J35</a></li>
+                <li><a id="ud9" href="./j21.html">J21</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="textholder">
+        <a href="#info1">AIRFORCE INDEX <br>Click for information</a>
+    </div>
+    <main>
+        <h1 class="h1inf">INFORMATION</h1>
+        <div class="info-flex">
+            <div id="info1">
+                <p>The Airforce Index© is a project made by Aspiced as a last project in the course Webbutveckling 2. Here you can see airplanes from three different countries. There's currently only three airplanes per country. The website should be responsive. Contact form doesnt actually work :D</p>
+            </div>
+            <div class="dp">
+                <p>Documented planes: <br> Su 57 - Russia <br> MiG 21 - Russia <br> Yak-9 - Russia <br> F-22 - USA <br> F-4 - USA <br> P-51 - USA <br> JAS 39 - Sweden <br> J 35 - Sweden <br> J 21 - Sweden</p>
+            </div>
+            <div class="contactbox1"><p>Want to add an aircraft? Contact me:</p>
+                <div class="formr">
+                    <form action="">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="sweden">Sweden</option>
+                            <option value="russia">Russia</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="What aircraft?"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p id="info" href="">Reset Video</p>
+        
+    </main>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

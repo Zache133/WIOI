@@ -1,0 +1,331 @@
+.flex-c{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+.flex-c > div{
+    width: 10vw;
+    height: 10vw;
+    margin: 10px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 0;
+    border: 2px black solid;
+}
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+    
+}
+#background-video {
+    display: none;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw; 
+    min-height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+#background-video3 {
+    display: none;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw; 
+    min-height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+#background-video2 {
+    display: none;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw; 
+    min-height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+#background-video1 {
+    display: block;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw; 
+    min-height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+.flex-cm{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+.flex-cm > div{
+    width: 10vw;
+    height: 10vw;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 0;
+}
+ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+li {
+    font-size: 2em;
+    list-style-type: none;
+}
+#usaDrop, #sweDrop, #ussrDrop{
+    background-color: transparent;
+    color: transparent;
+}
+
+li > a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    margin-top: 75vh;
+}
+#ud{
+    color: transparent;
+}
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #000000;
+}
+.progress-bar {
+    height: 8px;
+    background: #049faa;
+    width: 0%;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.textholder{
+    margin: auto;
+    text-align: center;
+}
+.textholder > a{
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.info-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+.info-flex > div{
+    width: 30vw;
+    height: 30vw;
+    margin: 3px;
+    background-color: black;
+    margin: 0 auto;
+    border: 2px solid #049faa;
+    border-radius: 3px;
+
+}
+.h1inf{
+    text-align: center;
+    margin: auto;
+
+}
+#info{
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+    color: cadetblue;
+    font-size: 2em;
+    cursor: default;
+}
+.info-flex > div > p{
+    color: white;
+
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+.formr{
+    color: white;
+    display: block;
+    padding: 5px;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.dp{
+    text-align: center;
+    font-size: 2em;
+}
+html {
+    overflow-x: initial !important;
+}
+.subject{
+    height: 20vh;
+}
+@media only screen and (max-width: 600px){
+    .flex-c{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 auto;
+    }
+    .flex-c > div{
+        width: 25vw;
+        height: 25vw;
+        margin: 10px;
+        background-color: black;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden
+    }
+    .info-flex{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 auto;
+    }
+    .flex-cm > div{
+        width: 40vw;
+        height: 40vw;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+        margin-top: 0;
+    }
+    .info-flex > div{
+        width: 60vw;
+        height: 60vw;
+        margin: 3px;
+        background-color: black;
+        margin: 0 auto;
+        margin-top: 10px;
+    
+    }
+    .dp{
+        font-size: 1em;
+    }
+    input[type=text], select, textarea {
+        width: 100%; 
+        padding: 1px;
+        border: 1px solid #ccc; 
+        resize: vertical 
+      }
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 50px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }   
+    .subject{
+        height: 10vh;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .flex-c > div{
+        width: 30vw;
+        height: 30vw;
+        margin: 10px;
+        background-color: black;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .flex-cm > div{
+        width: 30vw;
+        height: 20vh;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+        margin-top: 0;
+    }
+    .info-flex{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 auto;
+    }
+    .info-flex > div{
+        width: 50vw;
+        height: 80vw;
+        margin: 3px;
+        background-color: black;
+        margin: 0 auto;
+        margin-top: 10px;
+    
+    }
+    #info{
+        margin-top: 20vh;
+    }
+}
+@media only screen and (max-width: 1330px){
+
+    .info-flex > div{
+        height: 80vh;
+    }
+    
+}
+  
